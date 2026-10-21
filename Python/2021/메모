@@ -1,0 +1,10 @@
+git 에 올릴 폴더로 이동
+경로 위치에 cmd 라고 치기
+git init 치기 #사진사고용 (1번)
+git add . #올릴 코드 모으기
+git commit -m "first commit"
+# commit <- git 에 올리기
+# -m <- 메세지, 제목설정
+# "first commit" 제목
+git log
+git reset --hard c5e2a604b7818d913b0f28cf2145e1d5c9a801ef
