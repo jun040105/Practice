@@ -1,3 +1,7 @@
 x = ["ex", "Ex", "Yes", "yes"]
+x = {"a": 1, "b": 0}
 
-print(x[len(x)])
+x = "abc"
+y = "b"
+
+print(x-y)
