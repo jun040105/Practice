@@ -1,7 +1,23 @@
-x = ["ex", "Ex", "Yes", "yes"]
-x = {"a": 1, "b": 0}
+def well_formed(line):    
 
-x = "abc"
-y = "b"
+    stack = []
 
-print(x-y)
+    for i in line:
+      
+      if i in "({[":
+        stack.append(i)  
+      else:
+        if not stack:
+          return False
+
+        a = stack.pop()
+        
+        if i == ")" and a == "(":
+          pass
+        elif i == "]" and a == "[": 
+          pass
+        elif i == "}" and a == "{": 
+          pass
+        else: return False
+
+    return len(stack) == 0
