@@ -1,5 +1,8 @@
 def merge_intervals(intervals):
 
+    if not intervals:
+        return []
+
     intervals = sorted(intervals)
     returnvals = [intervals[0]]
 
